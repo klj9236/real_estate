@@ -34,7 +34,7 @@ Environment Setup
 
 Create and activate a new Anaconda virtual environment:
 
-conda create -n real estate-env python=3.8 # (first time only) conda activate real estate-env From within the virtual environment, install the required packages specified in the "requirements.txt" file you created:
+conda create -n realestate-env python=3.8 # (first time only) conda activate realestate-env From within the virtual environment, install the required packages specified in the "requirements.txt" file you created:
 
 pip install -r requirements.txt From within the virtual environment, demonstrate your ability to run the Python script from the command-line:
 
@@ -71,3 +71,11 @@ this is the ".env" file
 USREALESTATE_API_KEY="abc123"
 
 The ".env" file should absolutely not be tracked in version control or included in your GitHub repository. Use a local ".gitignore" file for this purpose.
+
+API Requirments 
+
+Vist https://rapidapi.com/datascraper/api/us-real-estate/ and set up an account to gain API access. 
+Choose Get/sold-homes and copy and paste sample code into real_estate.py file. 
+
+Convert String into DataFrames
+
