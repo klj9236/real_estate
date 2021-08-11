@@ -19,8 +19,6 @@ response = requests.request("GET", url, headers=headers, params=querystring)
 r = response.text
 parsed_response = json.loads(r)
 
-
-
 clean_list = []
 for item in parsed_response["data"]["results"]:
 
