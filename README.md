@@ -16,8 +16,6 @@ Use your text editor or the command-line to create a new sub-directory called "a
 
 this is the "app/real_estate.py" file
 
-print("-------------------------") print("SELECTED SYMBOL: XYZ") print("-------------------------") print("REQUESTING STOCK MARKET DATA...") print("REQUEST AT: 2018-02-20 02:00pm") print("-------------------------") print("LATEST DAY: 2018-02-20") print("LATEST CLOSE: $100,000.00") print("RECENT HIGH: $101,000.00") print("RECENT LOW: $99,000.00") print("-------------------------") print("RECOMMENDATION: BUY!") print("RECOMMENDATION REASON: TODO") print("-------------------------") print("HAPPY INVESTING!") print("-------------------------") Make sure to save Python files like this whenever you're done editing them. After setting up a virtual environment, we will be ready to run this file.
-
 Use your text editor or the command-line to create a new file called "requirements.txt" in the root directory of your repository, and then place inside the following contents:
 
 this is the "requirements.txt" file
@@ -44,7 +42,7 @@ Repository Requirements
 
 Your project repository should contain an "app" directory with a "robo_advisor.py" file inside (i.e. "app/robo_advisor.py").
 
-Your project repository should contain a "README.md" file. The README file should provide instructions to help someone else install, setup, and run your program. This includes instructions for installing package dependencies, for example using Pip. It also includes instructions for setting an environment variable named ALPHAVANTAGE_API_KEY (see "Security Requirements" section below).
+Your project repository should contain a "README.md" file. The README file should provide instructions to help someone else install, setup, and run your program. This includes instructions for installing package dependencies, for example using Pip. It also includes instructions for setting an environment variable named USREALESTATE_API_KEY (see "Security Requirements" section below).
 
 Your project repository should contain a file called ".gitignore" which prevents the ".env" file and its secret credentials from being tracked in version control. The ".gitignore" file generated during the GitHub repo creation process should already do this, otherwise you can create your own ".gitignore" file and place inside the following contents:
 
@@ -77,5 +75,7 @@ API Requirments
 Vist https://rapidapi.com/datascraper/api/us-real-estate/ and set up an account to gain API access. 
 Choose Get/sold-homes and copy and paste sample code into real_estate.py file. 
 
-Convert String into DataFrames
+Test via Pytest
+
+Fetch data from larger varible 
 
