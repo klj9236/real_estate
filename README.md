@@ -1,4 +1,10 @@
 # real_estate
+
+Create a .env file with the following info
+```
+USREALESTATE_API_KEY = "Your_Key_Here"
+```
+
 Final Programming Project
 Real estate
 
