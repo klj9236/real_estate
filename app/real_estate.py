@@ -16,12 +16,7 @@ api_key = os.environ.get("USREALESTATE_API_KEY")
 url = "https://us-real-estate.p.rapidapi.com/sold-homes"
 
 
-querystring = {"state_code": input("State Initials:"),"city": input("City:"),"property_type": "x","limit": input("Limit:"),"offset":"0","sort":"sold_date"}
-x=int(input("Property Type, enter 1 for multi-family or 2 for single family:"))
-if x==1:
-    print("multi_family")
-else:
-   print("single_family")
+querystring = {"state_code": input("State Initials:"),"city": input("City:"),"property_type": "single_family","limit": input("Limit:"),"offset":"0","sort":"sold_date"}
 
 
 
@@ -32,8 +27,6 @@ headers = {
 
 response = requests.request("GET", url, headers=headers, params=querystring)
 #print(type(response.text))
-
-quit()
 
 r = response.text
 
