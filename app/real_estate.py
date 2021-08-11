@@ -18,6 +18,8 @@ url = "https://us-real-estate.p.rapidapi.com/sold-homes"
 
 querystring = {"state_code":"NY","city":"Latham","location":"12110","limit":"20","offset":"0","sort":"sold_date"}
 
+# ken's input querystring = {"state_code": input("State Initials:"),"city": input("City:"),"property_type": "single_family","limit": input("Limit:"),"offset":"0","sort":"sold_date"}
+
 headers = {
     'x-rapidapi-key': api_key,
     'x-rapidapi-host': "us-real-estate.p.rapidapi.com"
