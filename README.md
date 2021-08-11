@@ -1,8 +1,5 @@
-# real_estate
-Final Programming Project
 Real estate
 
-#hello world
 Setup
 
 Repo Setup
@@ -14,18 +11,31 @@ After creating the remote repo, use GitHub Desktop software or the command-line 
 After cloning the repo, navigate there from the command-line:
 
 ``cd ~/Desktop/real_estate
+
 Use your text editor or the command-line to create a new sub-directory called "app" with a file called "real_estate.py", and then place inside some example print statements like the following:
+
 this is the "app/real_estate.py" file
+
 Use your text editor or the command-line to create a new file called "requirements.txt" in the root directory of your repository, and then place inside the following contents:
+
 this is the "requirements.txt" file
+
 it might be helpful to use pandas. if you do, uncomment the last line below ...
+
 requests python-dotenv
+
 pandas
+
 After setting up a virtual environment, we will be ready to install these packages.
+
 Environment Setup
+
 Create and activate a new Anaconda virtual environment:
+
 conda create -n realestate-env python=3.8 # (first time only) conda activate realestate-env From within the virtual environment, install the required packages specified in the "requirements.txt" file you created:
+
 pip install -r requirements.txt From within the virtual environment, demonstrate your ability to run the Python script from the command-line:
+
 ``python app/real_estate.py Basic Requirements
 
 Repository Requirements
@@ -67,4 +77,5 @@ Choose Get/sold-homes and copy and paste sample code into real_estate.py file.
 
 Test via Pytest
 
-Fetch data from larger varible 
+Fetch data from larger variable 
+
