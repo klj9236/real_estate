@@ -4,13 +4,22 @@ import requests
 import json
 from pprint import pprint
 from pandas import DataFrame
+from dotenv import load_dotenv
+import os
+import datetime
+
+datetime.datetime.now()
+
+load_dotenv()
+
+api_key = os.getenv("USREALESTATE_API_KEY")
 
 url = "https://us-real-estate.p.rapidapi.com/sold-homes"
 
 querystring = {"state_code":"NY","city":"Latham","location":"12110","limit":"20","offset":"0","sort":"sold_date"}
 
 headers = {
-    'x-rapidapi-key': "8352fae3e7mshe6a66a045b0c651p1121bcjsn9202ff5c9e7c", # Needs to be changed to an enviornment varaible, PLease don't use my API Key :(
+    'x-rapidapi-key': api_key,
     'x-rapidapi-host': "us-real-estate.p.rapidapi.com"
     }
 
@@ -84,7 +93,7 @@ for item in parsed_response["data"]["results"]:
   clean_list.append(clean_item)
 
 df = DataFrame(clean_list)
-
-df.to_csv("home_price_results.csv")
-
 print(df)
+
+df.to_csv(f"home_price_results_{datetime.datetime.now()}.csv")
+
