@@ -79,3 +79,8 @@ Test via Pytest
 
 Fetch data from larger variable 
 
+Create test file into a "test" directory, and slightly modify its import statement to reflect the application's new location (e.g. app.my_script)
+
+In some cases this can be achieved by adding a special file called "__init__.py" to the "app" directory. But for testing purposes, its recommended that you also add a special file called "conftest.py" to the repository's root directory. Even if the contents of these files are empty, it helps the Pytest package locate the proper files.
+
+Test the type of data and the number of columns. The data type should be a dataframe while the number of columns should be 25. 

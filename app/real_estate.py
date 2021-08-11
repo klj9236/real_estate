@@ -18,22 +18,24 @@ url = "https://us-real-estate.p.rapidapi.com/sold-homes"
 
 # Old Input querystring = {"state_code":"NY","city":"Latham","location":"12110","limit":"20","offset":"0","sort":"sold_date"}
 
-querystring = {"state_code": input("State Initials:"),"city": input("City:"),"location": input("Zip Code"),"property_type":"single_family","limit":"20","offset":"0","sort":"sold_date"}
-
 headers = {
     'x-rapidapi-key': api_key,
     'x-rapidapi-host': "us-real-estate.p.rapidapi.com"
     }
+
+querystring = {"state_code": input("State:"),"city": input("City:"),"location": input("Zip Code:"),"property_type":"single_family","limit":"20","offset":"0","sort":"sold_date"}
+
 
 response = requests.request("GET", url, headers=headers, params=querystring)
 
 r = response.text
 parsed_response = json.loads(r)
 
-clean_list = []
-for item in parsed_response["data"]["results"]:
+def fetch_soldhomes(State,City,Zipcode):
+  clean_list = []
+  for item in parsed_response["data"]["results"]:
 
-  clean_item = {
+    clean_item = {
       "listing_id":item["listing_id"],
       "lat":item["location"]["address"]["coordinate"]['lat'],
       "long":item["location"]["address"]["coordinate"]['lon'],
@@ -93,6 +95,10 @@ for item in parsed_response["data"]["results"]:
     pass
 
   clean_list.append(clean_item)
+  return clean_list
+
+clean_list = fetch_soldhomes(State="",City="",Zipcode="")
+
 
 df = DataFrame(clean_list)
 print(df)
