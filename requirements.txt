@@ -8,3 +8,5 @@ os
 pytest
 seaborn
 matplotlib
+plotly
+kaleido

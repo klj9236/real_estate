@@ -114,3 +114,12 @@ import seaborn as sns
 ax = sns.boxplot( x='median_price_per_sf', data = result, linewidth="2", palette = "muted")
 ax = sns.swarmplot( x='median_price_per_sf', data = result, color = ".15")
 plt.savefig(f"median_sf_values_{datetime.datetime.now()}.pdf")
+
+
+import plotly.express as px
+fig = px.scatter_mapbox(result, lat="lat", lon="long", color="median_price_per_sf", size="median_price_per_sf",
+                  color_continuous_scale=px.colors.sequential.Emrld, size_max=30, zoom = 10,
+                  mapbox_style="carto-positron")
+fig.show()
+
+fig.write_image("housing_map.pdf")
