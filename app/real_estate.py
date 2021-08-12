@@ -8,6 +8,7 @@ from dotenv import load_dotenv
 import os
 import datetime
 import pandas as pd
+import matplotlib.pyplot as plt
 
 datetime.datetime.now()
 
@@ -112,4 +113,4 @@ import seaborn as sns
 
 ax = sns.boxplot( x='median_price_per_sf', data = result, linewidth="2", palette = "muted")
 ax = sns.swarmplot( x='median_price_per_sf', data = result, color = ".15")
-
+plt.savefig("median_sf_values.pdf")
