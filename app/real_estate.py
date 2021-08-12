@@ -7,6 +7,7 @@ from pandas import DataFrame
 from dotenv import load_dotenv
 import os
 import datetime
+import pandas as pd
 
 datetime.datetime.now()
 
@@ -95,7 +96,20 @@ for item in parsed_response["data"]["results"]:
   clean_list.append(clean_item)
 
 df = DataFrame(clean_list)
-print(df)
 
-df.to_csv(f"home_price_results_{datetime.datetime.now()}.csv")
+msp = df[['sold_price']].div(df.square_feet, axis =0)
+
+mspr = msp.rename(columns = {'sold_price':'median_price_per_sf'})
+
+frames = [df , mspr]
+
+result = pd.concat(frames, axis=1)
+
+print(result)
+result.to_csv(f"home_price_results_{datetime.datetime.now()}.csv")
+
+import seaborn as sns
+
+ax = sns.boxplot( x='median_price_per_sf', data = result, linewidth="2", palette = "muted")
+ax = sns.swarmplot( x='median_price_per_sf', data = result, color = ".15")
 
