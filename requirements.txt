@@ -7,3 +7,4 @@ pprint
 os
 pytest
 seaborn
+matplotlib
