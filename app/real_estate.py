@@ -20,7 +20,7 @@ url = "https://us-real-estate.p.rapidapi.com/sold-homes"
 
 # Old Input querystring = {"state_code":"NY","city":"Latham","location":"12110","limit":"20","offset":"0","sort":"sold_date"}
 
-querystring = {"state_code": input("State Initials:"),"city": input("City:"),"location": input("Zip Code"),"property_type":"single_family","limit":"20","offset":"0","sort":"sold_date"}
+querystring = {"state_code": input("State Initials:"),"city": input("City:"),"location": input("Zip Code"),"property_type":"multi_family","limit":"20","offset":"0","sort":"sold_date","expand_search_radius":"1"}
 
 headers = {
     'x-rapidapi-key': api_key,
@@ -117,7 +117,7 @@ plt.savefig(f"median_sf_values_{datetime.datetime.now()}.pdf")
 
 
 import plotly.express as px
-fig = px.scatter_mapbox(result, lat="lat", lon="long", color="median_price_per_sf", size="median_price_per_sf",
+fig = px.scatter_mapbox(result, lat="lat", lon="long", color="median_price_per_sf", size="square_feet",
                   color_continuous_scale=px.colors.sequential.Emrld, size_max=30, zoom = 10,
                   mapbox_style="carto-positron")
 fig.show()

@@ -1,0 +1,21 @@
+,listing_id,lat,long,property_type,street_address,city,state,zip_code,square_feet,beds,full_baths,half_baths,garage,lot_size_sf,year_built,list_price,sold_price,list_date,sold_date,primary_phot_url,url_photo_1,url_photo_2,url_photo_3,url_photo_4,url_photo_5,median_price_per_sf
+0,2912310311,40.740623,-73.998907,multi_family,210 W 17th St,New York,New York,10011,,0.0,,,,,1930,8000000.0,7200000,2021-08-06T16:06:06Z,2021-08-06,https://ap.rdcpix.com/0232bf1e83aa872fa6314c88f88a458cl-m4062669591s-w1024_h768.jpg,https://ap.rdcpix.com/0232bf1e83aa872fa6314c88f88a458cl-m4062669591s-w1024_h768.jpg,https://ap.rdcpix.com/0232bf1e83aa872fa6314c88f88a458cl-m343323472s-w1024_h768.jpg,https://ap.rdcpix.com/0232bf1e83aa872fa6314c88f88a458cl-m3948484626s-w1024_h768.jpg,https://ap.rdcpix.com/0232bf1e83aa872fa6314c88f88a458cl-m3054023003s-w1024_h768.jpg,https://ap.rdcpix.com/0232bf1e83aa872fa6314c88f88a458cl-m934547380s-w1024_h768.jpg,
+1,,40.72373,-73.990033,multi_family,43 E 1st St,New York,New York,10003,0.0,,,,,1925.0,1900,,4660000,,2021-07-29,,,,,,,inf
+2,,40.740362,-74.003163,multi_family,313 W 14th St,New York,New York,10014,0.0,,,,,3100.0,1905,,1389640,,2021-07-27,,,,,,,inf
+3,,40.72928,-73.98039,multi_family,510 E 13th St,New York,New York,10009,0.0,,,,,3811.0,1900,,5400000,,2021-07-20,,,,,,,inf
+4,,40.742841,-73.997107,multi_family,204 W 21st St,New York,New York,10011,0.0,,,,,1518.0,1910,,7625000,,2021-07-20,,,,,,,inf
+5,,40.720061,-73.990374,multi_family,129 Allen St,New York,New York,10002,0.0,,,,,2200.0,1910,,4070000,,2021-07-20,,,,,,,inf
+6,,40.744182,-74.000386,multi_family,312 W 21st St,New York,New York,10011,0.0,,,,,2300.0,1900,,3400000,,2021-07-16,,,,,,,inf
+7,,40.734282,-73.982277,multi_family,318 E 18th St,New York,New York,10003,0.0,,,,,1560.0,1901,,360000,,2021-07-16,,,,,,,inf
+8,,40.729949,-74.003029,multi_family,34 Carmine St,New York,New York,10014,0.0,,,,,2730.0,1900,,9400000,,2021-07-12,,,,,,,inf
+9,,40.721297,-74.004067,multi_family,365 Canal St,New York,New York,10013,0.0,,,,,3612.0,1915,,8100000,,2021-07-07,,,,,,,inf
+10,2916495461,40.734626,-73.981343,multi_family,340 E 19th St,New York,New York,10003,4900.0,6.0,4.0,2.0,,1794.0,1910,6395000.0,6395000,2020-05-28T23:46:35Z,2021-06-18,https://ap.rdcpix.com/047245476365b6de9dec7fc216626d82l-m89634518s-w1024_h768.jpg,https://ap.rdcpix.com/047245476365b6de9dec7fc216626d82l-m89634518s-w1024_h768.jpg,https://ap.rdcpix.com/047245476365b6de9dec7fc216626d82l-m3459590175s-w1024_h768.jpg,https://ap.rdcpix.com/047245476365b6de9dec7fc216626d82l-m2123842968s-w1024_h768.jpg,https://ap.rdcpix.com/047245476365b6de9dec7fc216626d82l-m2652717694s-w1024_h768.jpg,https://ap.rdcpix.com/047245476365b6de9dec7fc216626d82l-m3523559006s-w1024_h768.jpg,1305.1020408163265
+11,,40.73472,-73.981563,multi_family,332 E 19th St,New York,New York,10003,0.0,,,,,3680.0,1920,,7900000,,2021-06-15,,,,,,,inf
+12,,40.726806,-73.995172,multi_family,654 Broadway,New York,New York,10012,0.0,,,,,3770.0,1900,,10000000,,2021-06-11,,,,,,,inf
+13,,40.736062,-74.003119,multi_family,244 W 11th St,New York,New York,10014,0.0,,,,,1600.0,1900,,8500000,,2021-06-10,,,,,,,inf
+14,,40.729616,-73.981303,multi_family,205 Avenue A,New York,New York,10009,0.0,,,,,2500.0,1900,,14350000,,2021-06-09,,,,,,,inf
+15,,40.737017,-73.999557,multi_family,159 W 12th St,New York,New York,10011,0.0,,,,,2060.0,1899,,19750000,,2021-06-09,,,,,,,inf
+16,,40.743632,-73.980392,multi_family,151 E 30th St,New York,New York,10016,0.0,,,,,1960.0,1930,,4400000,,2021-06-02,,,,,,,inf
+17,,40.732711,-73.995038,multi_family,9 E 9th St,New York,New York,10003,0.0,,,,,2300.0,1938,,9550000,,2021-06-01,,,,,,,inf
+18,,40.732092,-74.00326,multi_family,287 Bleecker St,New York,New York,10014,0.0,,,,,1800.0,1900,,10000000,,2021-05-28,,,,,,,inf
+19,,40.726826,-73.98654,multi_family,341 E 6th St,New York,New York,10003,0.0,,,,,2825.0,1900,,1615000,,2021-05-26,,,,,,,inf
